@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func loginButtonAction(){
+        view.endEditing(true)
         performLogin()
     }
     
@@ -26,17 +27,27 @@ class LoginViewController: UIViewController {
 
         setupUI()
     }
-        
+    
+    // MARK: - Private Methods
     private func setupUI() {
         loginButton.layer.cornerRadius = 25
     }
     
-    // MARK: - Private Methods
     private func performLogin(){
         guard let email = emailTextField.text, !email.isEmpty else {
             NotificationBanner(title: "Error", subtitle: "Debes especificar un correo.", style: .warning).show()
             return
         }
+        
+        guard let passwrod = passwordTextField.text, !passwrod.isEmpty else {
+            NotificationBanner(title: "Error", subtitle: "Debes especificar la contraseña.", style: .warning).show()
+            return
+        }
+        
+        performSegue(withIdentifier: "showHome", sender: nil)
+        
+        //Iniciar sesión aqui!
+        
     }
 
 }
