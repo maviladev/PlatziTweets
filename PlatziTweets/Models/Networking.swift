@@ -24,7 +24,7 @@ struct LoginResponse: Codable {
     let token: String
 }
 
-struct ErrorResponse {
+struct ErrorResponse: Codable {
     let error: String
 }
 

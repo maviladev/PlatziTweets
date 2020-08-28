@@ -8,6 +8,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -44,7 +46,32 @@ class LoginViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //Crear request
+        let request = LoginRequest(email: email, password: passwrod)
+        
+        //Iniciamos la carga
+        SVProgressHUD.show()
+        
+        //Llamar a libreria de red
+        SN.post(endpoint: Endpoints.login,
+                model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+            switch response {
+            case .success(let user):
+                DispatchQueue.main.async {
+                    NotificationBanner(subtitle: "Bienvenido \(user.user.names)", style: .success).show()
+                }
+                
+                self.performSegue(withIdentifier: "showHome", sender: nil)
+            case .error(let error):
+                NotificationBanner(title: "Error",
+                                   subtitle: error.localizedDescription, style: .danger).show()
+            case .errorResult(let entity):
+                NotificationBanner(title: "Error",
+                                   subtitle: entity.error,
+                                   style: .warning).show()
+            }
+        }
+        //performSegue(withIdentifier: "showHome", sender: nil)
         
         //Iniciar sesión aqui!
         
