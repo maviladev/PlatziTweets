@@ -45,6 +45,7 @@ class LoginViewController: UIViewController {
             NotificationBanner(title: "Error", subtitle: "Debes especificar la contraseña.", style: .warning).show()
             return
         }
+        //INICIAR sesion aqui
         
         //Crear request
         let request = LoginRequest(email: email, password: passwrod)
@@ -71,10 +72,6 @@ class LoginViewController: UIViewController {
                                    style: .warning).show()
             }
         }
-        //performSegue(withIdentifier: "showHome", sender: nil)
-        
-        //Iniciar sesión aqui!
-        
     }
 
 }

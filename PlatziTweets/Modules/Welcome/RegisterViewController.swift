@@ -53,8 +53,6 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        //performSegue(withIdentifier: "showHome", sender: nil)
-        
         //REGISTRAR aqui!
         let request = RegistryRequest(email: email, password: password, names: names)
         
