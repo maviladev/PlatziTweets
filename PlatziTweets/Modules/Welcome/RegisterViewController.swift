@@ -8,6 +8,8 @@
 
 import UIKit
 import NotificationBannerSwift
+import Simple_Networking
+import SVProgressHUD
 
 class RegisterViewController: UIViewController {
 
@@ -19,7 +21,7 @@ class RegisterViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func registryButtonAction() {
-        view.endEditing(true)
+        //view.endEditing(true)
         performRegistry()
     }
     
@@ -51,10 +53,31 @@ class RegisterViewController: UIViewController {
             return
         }
         
-        performSegue(withIdentifier: "showHome", sender: nil)
+        //performSegue(withIdentifier: "showHome", sender: nil)
         
         //REGISTRAR aqui!
+        let request = RegistryRequest(email: email, password: password, names: names)
         
+        SVProgressHUD.show()
+        
+        SN.post(endpoint: Endpoints.register,
+                model: request) { (response: SNResultWithEntity<LoginResponse, ErrorResponse>) in
+                    switch response{
+                    case .success(let user):
+                        DispatchQueue.main.async {
+                            NotificationBanner(subtitle: "Usuario creado \(user.user.names)", style: .success).show()
+                        }
+                        self.performSegue(withIdentifier: "showHome", sender: nil)
+                    case .error(let error):
+                        NotificationBanner(title: "Error",
+                                       subtitle: error.localizedDescription,
+                                       style: .danger).show()
+                    case .errorResult(let entity):
+                        NotificationBanner(title: "Error",
+                                           subtitle: entity.error,
+                                           style: .warning).show()
+                    }
+        }
     }
 
 }
