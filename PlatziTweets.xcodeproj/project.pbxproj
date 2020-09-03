@@ -17,6 +17,9 @@
 		C94C8D8B24F68A1800981921 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C8D8A24F68A1800981921 /* WelcomeViewController.swift */; };
 		C94C8D8D24F68A2800981921 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C8D8C24F68A2800981921 /* LoginViewController.swift */; };
 		C94C8D8F24F68A3900981921 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C8D8E24F68A3900981921 /* RegisterViewController.swift */; };
+		C96818352500FE47007803FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96818342500FE47007803FD /* HomeViewController.swift */; };
+		C96818392500FFF6007803FD /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96818372500FFF6007803FD /* TweetTableViewCell.swift */; };
+		C968183A2500FFF6007803FD /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96818382500FFF6007803FD /* TweetTableViewCell.xib */; };
 		C9A484E824F67DDB00E56A44 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A484E724F67DDB00E56A44 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +38,9 @@
 		C94C8D8A24F68A1800981921 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C94C8D8C24F68A2800981921 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C94C8D8E24F68A3900981921 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C96818342500FE47007803FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C96818372500FFF6007803FD /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		C96818382500FFF6007803FD /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		C9A484E724F67DDB00E56A44 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +76,9 @@
 		C90CC6B624F7CE17008EA7A1 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C96818362500FFBF007803FD /* Cells */,
 				C90CC6B724F7CE44008EA7A1 /* Home.storyboard */,
+				C96818342500FE47007803FD /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -110,6 +118,15 @@
 				C91BB6D624F6654E00406554 /* Networking.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C96818362500FFBF007803FD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C96818372500FFF6007803FD /* TweetTableViewCell.swift */,
+				C96818382500FFF6007803FD /* TweetTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		C9A484E424F67D7300E56A44 /* Commons */ = {
@@ -203,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C968183A2500FFF6007803FD /* TweetTableViewCell.xib in Resources */,
 				C91BB6CD24F6635800406554 /* LaunchScreen.storyboard in Resources */,
 				C91BB6CA24F6635800406554 /* Assets.xcassets in Resources */,
 				C9A484E824F67DDB00E56A44 /* Welcome.storyboard in Resources */,
@@ -264,7 +282,9 @@
 				C91BB6C124F6634E00406554 /* AppDelegate.swift in Sources */,
 				C94C8D8F24F68A3900981921 /* RegisterViewController.swift in Sources */,
 				C94C8D8D24F68A2800981921 /* LoginViewController.swift in Sources */,
+				C96818352500FE47007803FD /* HomeViewController.swift in Sources */,
 				C91BB6D724F6654E00406554 /* Networking.swift in Sources */,
+				C96818392500FFF6007803FD /* TweetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

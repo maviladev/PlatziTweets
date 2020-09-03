@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9OT-uv-fE8">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -23,13 +23,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PlatziTweets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiU-C6-IcW">
-                                        <rect key="frame" x="89.5" y="346.5" width="235" height="43"/>
+                                        <rect key="frame" x="89.666666666666686" y="346.66666666666669" width="235" height="43"/>
                                         <fontDescription key="fontDescription" type="system" weight="black" pointSize="36"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La comunidad más grande de devs iOS." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mlT-4L-NW8">
-                                        <rect key="frame" x="50" y="394.5" width="314" height="21"/>
+                                        <rect key="frame" x="50" y="394.66666666666669" width="314" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -107,7 +107,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JXu-bo-0Yc">
-                                <rect key="frame" x="20" y="168.5" width="374" height="145"/>
+                                <rect key="frame" x="20" y="168.33333333333334" width="374" height="145.00000000000003"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OpP-7B-NMI">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
@@ -120,7 +120,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b78-5K-0ji">
-                                        <rect key="frame" x="0.0" y="88" width="374" height="57"/>
+                                        <rect key="frame" x="0.0" y="87.999999999999972" width="374" height="57"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="57" id="dEq-65-2qc"/>
@@ -181,65 +181,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="u4Q-J6-pjL">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U50-bz-Zlk">
+                                <rect key="frame" x="20" y="160" width="374" height="189"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U50-bz-Zlk">
-                                        <rect key="frame" x="20" y="160" width="374" height="189"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOD-cB-7YD">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-QV-Rgv">
-                                                <rect key="frame" x="0.0" y="44" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjD-fB-7Ul">
-                                                <rect key="frame" x="0.0" y="88" width="374" height="34"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVE-LP-Acm">
-                                                <rect key="frame" x="0.0" y="132" width="374" height="57"/>
-                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="57" id="qnk-QD-u84"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                                <state key="normal" title="Registro">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="registryButtonAction" destination="imU-dY-7Wi" eventType="touchUpInside" id="6PP-BF-Hol"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="6YH-B0-fc5">
-                                        <rect key="frame" x="0.0" y="771" width="414" height="125"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TOD-cB-7YD">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre y Apellido" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c8X-QV-Rgv">
+                                        <rect key="frame" x="0.0" y="44" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjD-fB-7Ul">
+                                        <rect key="frame" x="0.0" y="88" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVE-LP-Acm">
+                                        <rect key="frame" x="0.0" y="132" width="374" height="57"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="125" id="9oz-8J-VUO"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="d25-Cz-ty7"/>
+                                            <constraint firstAttribute="height" constant="57" id="HAE-c4-n3p"/>
                                         </constraints>
-                                    </imageView>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Registro">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registryButtonAction" destination="imU-dY-7Wi" eventType="touchUpInside" id="6PP-BF-Hol"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomImage" translatesAutoresizingMaskIntoConstraints="NO" id="Zcy-gG-Bvl">
+                                <rect key="frame" x="0.0" y="771" width="414" height="125"/>
                                 <constraints>
-                                    <constraint firstItem="6YH-B0-fc5" firstAttribute="trailing" secondItem="UGj-OY-Ktq" secondAttribute="trailing" id="9f9-RQ-r0x"/>
-                                    <constraint firstItem="U50-bz-Zlk" firstAttribute="top" secondItem="UGj-OY-Ktq" secondAttribute="top" constant="20" id="LCL-HE-Nae"/>
-                                    <constraint firstItem="UGj-OY-Ktq" firstAttribute="trailing" secondItem="U50-bz-Zlk" secondAttribute="trailing" constant="20" id="Lde-bV-1vk"/>
-                                    <constraint firstItem="U50-bz-Zlk" firstAttribute="leading" secondItem="UGj-OY-Ktq" secondAttribute="leading" constant="20" id="cj1-fh-9op"/>
-                                    <constraint firstAttribute="bottom" secondItem="6YH-B0-fc5" secondAttribute="bottom" id="hHO-dV-mSL"/>
-                                    <constraint firstItem="6YH-B0-fc5" firstAttribute="leading" secondItem="UGj-OY-Ktq" secondAttribute="leading" id="o2w-84-Ai4"/>
+                                    <constraint firstAttribute="height" constant="125" id="iY3-1Q-2zq"/>
                                 </constraints>
-                                <viewLayoutGuide key="safeArea" id="UGj-OY-Ktq"/>
-                            </view>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U50-bz-Zlk" firstAttribute="top" secondItem="XZR-rm-09b" secondAttribute="top" constant="20" id="U2o-hC-DMu"/>
+                            <constraint firstItem="Zcy-gG-Bvl" firstAttribute="trailing" secondItem="XZR-rm-09b" secondAttribute="trailing" id="Xjd-ia-eZT"/>
+                            <constraint firstAttribute="bottom" secondItem="Zcy-gG-Bvl" secondAttribute="bottom" id="bME-w3-fJX"/>
+                            <constraint firstItem="Zcy-gG-Bvl" firstAttribute="leading" secondItem="XZR-rm-09b" secondAttribute="leading" id="v8n-hY-gPB"/>
+                            <constraint firstItem="U50-bz-Zlk" firstAttribute="leading" secondItem="XZR-rm-09b" secondAttribute="leading" constant="20" id="wca-VJ-7rM"/>
+                            <constraint firstItem="XZR-rm-09b" firstAttribute="trailing" secondItem="U50-bz-Zlk" secondAttribute="trailing" constant="20" id="yeO-4Y-Z6j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XZR-rm-09b"/>
                     </view>
                     <navigationItem key="navigationItem" title="Registro" id="cBU-s3-50q"/>
@@ -253,7 +244,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EOE-tw-aDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1797.1014492753625" y="492.85714285714283"/>
+            <point key="canvasLocation" x="1796" y="492.50374812593708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MSI-Y7-gjV">
@@ -275,7 +266,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IbU-Vn-yS9"/>
+        <segue reference="PQC-wC-2XH"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="bottomImage" width="351.5" height="123"/>
