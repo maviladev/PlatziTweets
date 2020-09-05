@@ -21,7 +21,7 @@ class RegisterViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func registryButtonAction() {
-        //view.endEditing(true)
+        view.endEditing(true)
         performRegistry()
     }
     
@@ -66,6 +66,7 @@ class RegisterViewController: UIViewController {
                             NotificationBanner(subtitle: "Usuario creado \(user.user.names)", style: .success).show()
                         }
                         self.performSegue(withIdentifier: "showHome", sender: nil)
+                        SimpleNetworking.setAuthenticationHeader(prefix: "", token: user.token)
                     case .error(let error):
                         NotificationBanner(title: "Error",
                                        subtitle: error.localizedDescription,
@@ -74,6 +75,7 @@ class RegisterViewController: UIViewController {
                         NotificationBanner(title: "Error",
                                            subtitle: entity.error,
                                            style: .warning).show()
+                        SVProgressHUD.dismiss()
                     }
         }
     }
