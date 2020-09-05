@@ -17,6 +17,7 @@
 		C94C8D8B24F68A1800981921 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C8D8A24F68A1800981921 /* WelcomeViewController.swift */; };
 		C94C8D8D24F68A2800981921 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C8D8C24F68A2800981921 /* LoginViewController.swift */; };
 		C94C8D8F24F68A3900981921 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94C8D8E24F68A3900981921 /* RegisterViewController.swift */; };
+		C95990AB2504241900025ACD /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95990AA2504241900025ACD /* AddPostViewController.swift */; };
 		C96818352500FE47007803FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96818342500FE47007803FD /* HomeViewController.swift */; };
 		C96818392500FFF6007803FD /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96818372500FFF6007803FD /* TweetTableViewCell.swift */; };
 		C968183A2500FFF6007803FD /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96818382500FFF6007803FD /* TweetTableViewCell.xib */; };
@@ -38,6 +39,7 @@
 		C94C8D8A24F68A1800981921 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C94C8D8C24F68A2800981921 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C94C8D8E24F68A3900981921 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C95990AA2504241900025ACD /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		C96818342500FE47007803FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C96818372500FFF6007803FD /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		C96818382500FFF6007803FD /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				C96818362500FFBF007803FD /* Cells */,
 				C90CC6B724F7CE44008EA7A1 /* Home.storyboard */,
 				C96818342500FE47007803FD /* HomeViewController.swift */,
+				C95990AA2504241900025ACD /* AddPostViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C91BB6C524F6634E00406554 /* ViewController.swift in Sources */,
+				C95990AB2504241900025ACD /* AddPostViewController.swift in Sources */,
 				C94C8D8B24F68A1800981921 /* WelcomeViewController.swift in Sources */,
 				C91BB6C124F6634E00406554 /* AppDelegate.swift in Sources */,
 				C94C8D8F24F68A3900981921 /* RegisterViewController.swift in Sources */,
