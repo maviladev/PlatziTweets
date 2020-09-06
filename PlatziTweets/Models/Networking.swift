@@ -73,3 +73,15 @@ struct DeleteResponse: Codable {
     let isDone: Bool
     let message: String
 }
+
+struct PostRequest: Codable {
+    let text: String
+    let imageUrl: String?
+    let videoUrl: String?
+    let location: Location?
+}
+
+struct GeneralResponse: Codable {
+    let isDone: Bool
+    let message: String
+}
