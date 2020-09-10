@@ -35,6 +35,8 @@ class TweetTableViewCell: UITableViewCell {
         messageLabel.text = post.text
         
         if post.hasImage {
+            // configurar imagen
+            tweetImageView.isHidden = false
             tweetImageView.kf.setImage(with: URL(string: post.imageUrl!))
         } else {
             tweetImageView.isHidden = true
