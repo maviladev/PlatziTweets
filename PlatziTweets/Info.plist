@@ -45,5 +45,11 @@
     <key>NSMicrophoneUsageDescription</key>
     <string>Usaremos el microfono para grabar el video</string>
     
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Usaremos la ubicacion para el tweet!</string>
+    
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Usaremos la ubicacion para el tweet!</string>
+    
 </dict>
 </plist>
