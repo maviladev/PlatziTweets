@@ -22,6 +22,7 @@
 		C96818352500FE47007803FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96818342500FE47007803FD /* HomeViewController.swift */; };
 		C96818392500FFF6007803FD /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96818372500FFF6007803FD /* TweetTableViewCell.swift */; };
 		C968183A2500FFF6007803FD /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96818382500FFF6007803FD /* TweetTableViewCell.xib */; };
+		C96B7FA2250EB37C0021865A /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B7FA1250EB37C0021865A /* MapViewController.swift */; };
 		C9A484E824F67DDB00E56A44 /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9A484E724F67DDB00E56A44 /* Welcome.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		C96818342500FE47007803FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C96818372500FFF6007803FD /* TweetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		C96818382500FFF6007803FD /* TweetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		C96B7FA1250EB37C0021865A /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C9A484E724F67DDB00E56A44 /* Welcome.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				C90CC6B724F7CE44008EA7A1 /* Home.storyboard */,
 				C96818342500FE47007803FD /* HomeViewController.swift */,
 				C95990AA2504241900025ACD /* AddPostViewController.swift */,
+				C96B7FA1250EB37C0021865A /* MapViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				C91BB6C524F6634E00406554 /* ViewController.swift in Sources */,
 				C95990AB2504241900025ACD /* AddPostViewController.swift in Sources */,
 				C94C8D8B24F68A1800981921 /* WelcomeViewController.swift in Sources */,
+				C96B7FA2250EB37C0021865A /* MapViewController.swift in Sources */,
 				C91BB6C124F6634E00406554 /* AppDelegate.swift in Sources */,
 				C94C8D8F24F68A3900981921 /* RegisterViewController.swift in Sources */,
 				C94C8D8D24F68A2800981921 /* LoginViewController.swift in Sources */,

@@ -53,14 +53,14 @@ struct PostItem: Codable {
     let imageUrl: String?
     let text: String
     let videoUrl: String?
-    let location: Location?
+    let location: PostRequestLocation?
     let hasVideo: Bool
     let hasImage: Bool
     let hasLocation: Bool
     let createdAt: String
 }
 
-struct Location: Codable {
+struct PostRequestLocation: Codable {
     let latitude: Double
     let longitude: Double
 }
@@ -78,7 +78,7 @@ struct PostRequest: Codable {
     let text: String
     let imageUrl: String?
     let videoUrl: String?
-    let location: Location?
+    let location: PostRequestLocation?
 }
 
 struct GeneralResponse: Codable {
